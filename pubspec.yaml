@@ -1,0 +1,32 @@
+name: su_hatirlat
+description: A Flutter application for reminding users to drink water.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.0.0
+  flutter_local_notifications: ^13.0.0
+  confetti: ^0.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/icons/
+flutter_local_notifications:
+  platforms:
+    android: true
+    ios: true
+
+dependency_overrides:
+  flutter_local_notifications:
+    git:
+      url: https://github.com/<Yusufx01>/flutter_local_notifications.git
+      ref: main
+
